@@ -47,6 +47,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5% 3% 5% 0;
 }
 
+.btn-dark a{
+    color: white;
+}
+
 .title-image {
     width: 50%
 }
@@ -99,4 +103,5 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer p {
     font-size: 0.90rem;
+
 }
