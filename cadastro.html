@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - MiauLar</title>
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/839b3f0fbd.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--Stylesheets-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid white-section">
+            <a class="navbar-brand" href="index.html">MiauLar</a>
+            <div class="d-flex">
+                <div>
+                    <a href="index.html" class="" aria-current="page"><span class="fa-solid fa-cat me-2"></span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Seção de Cadastro -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="bg-primary text-white text-center py-3 rounded-top-4">
+                        <h2 class="h4 mb-0">
+                            <span class="fa-solid fa-user-plus me-2"></span>Crie sua conta</h2>
+                        <p class="small mb-0 mt-1">Junte-se a nós.</p>
+                    </div>
+                    <div class="card-body p-4">
+                        <form>
+                            <div class="mb-3">
+                                <label for="userType" class="form-label fw-semibold">Você é:</label>
+                                <select class="form-select" id="userType" required>
+                                    <option value="" disabled selected>Selecione seu tipo de conta</option>
+                                    <option value="adotante">Adotante (Buscando um gatinho)</option>
+                                    <option value="protetor">Protetor Independente (Pessoa física)</option>
+                                    <option value="ong">ONG / Abrigo (Pessoa jurídica)</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label fw-semibold">Nome Completo / Nome da ONG</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Seu nome ou nome da organização" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label fw-semibold">Email</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="seu.email@exemplo.com" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="phoneInput" class="form-label fw-semibold">Telefone</label>
+                                <input type="tel" class="form-control" id="phoneInput" placeholder="(XX) XXXXX-XXXX" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="passwordInput" class="form-label fw-semibold">Senha</label>
+                                <input type="password" class="form-control" id="passwordInput" placeholder="Mínimo 6 caracteres" required>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <span class="fa-solid fa-paper-plane me-2"></span>Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center small text-muted">Já tem conta? <a href="login.html" class="text-primary fw-semibold">Faça Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="colored-section" id="footer">
+        <div class="container-fluid">
+            <a class="social" href="https://github.com/pedrosahel/" target="_blank"><span class="fa-brands fa-github-alt"></span></a>
+            <a class="social" href="https://www.linkedin.com/in/pedrosahelqf/" target="_blank"><span class="social fa-brands fa-linkedin"></span></a>
+            <a class="social" href=""><span class="social fa-brands fa-twitter"></span></a>
+            <a class="social" href=""><span class="social fa-solid fa-envelope"></span></a>
+            <p>© Copyright 2025 MiauLar</p>
+        </div>
+    </footer>
+</body>
+</html>
